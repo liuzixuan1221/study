@@ -4,7 +4,7 @@ var fs = require("fs");
 
 var server = http.createServer(function(req,res){
 
-
+    console.log(req.url);
     res.writeHead(200,{"Content-type":"text/html;charset=UTF-8"});
     if (req.url == "/red"){
         fs.readFile("./yanse/red.html",function(err,data){
@@ -22,7 +22,8 @@ var server = http.createServer(function(req,res){
         });
     }
     else if (req.url == "/jm.jpg"){
-        fs.readFile("jm.jpg", function (err,data) {
+        fs.readFile("./yanse/jm.jpg", function (err,data) {
+            res.writeHead(200,{"Content-type":"image/jpg"});
             res.end(data);
         });
     }

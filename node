@@ -187,3 +187,20 @@ navigator.userAgent     userAgent 属性是一个只读的字符串，声明了�
 
      明日工作安排：
             2018/09/04
+
+
+
+
+     //npm  install silly-datetime  --save
+
+     /*
+
+        install => i
+
+        npm install 安装项目依赖
+        npm init 初始化文件  出现package.json
+        dependencies    生产环境    线上需要运行的包    --save   == -S       会下载到生产环境里
+        devdependencies 开发环境    开发时需要用到的包  --save-dev   == -D   会下载到开发环境里
+
+            -y  yes
+     */

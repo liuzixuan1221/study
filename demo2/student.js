@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //var http = require("http");
 //var urlLib = require("url");
 //
@@ -64,7 +64,6 @@ http.createServer((req,res)=>{
     }
     res.end();
 }).listen(3001);
-=======
 var http = require("http");
 var urlLib = require("url");
 
@@ -88,4 +87,4 @@ http.createServer((req,res)=>{
         res.end("无此id");
     }
 }).listen(3000,"127.0.0.1");
->>>>>>> 76592da2cfb7668198e37fb6f09d3f758697680c
+

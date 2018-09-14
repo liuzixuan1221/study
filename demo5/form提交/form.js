@@ -18,6 +18,8 @@ http.createServer((req,res)=>{
         /*
             传输数据时分片段区传输，防止数据量过大。卡奔进程
         */
+
+        //开始接收数据 data固定不变
        req.addListener("data",function(chunk){
             allData += chunk;
        }) 
